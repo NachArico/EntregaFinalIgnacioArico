@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+.btn-content a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 60px;
+  font-size: 1.4rem;
+  transition: 0.5s;
+  color: black;
+  padding: 10px;
+  width: 100%;
+}
+.btn-content a:hover {
+  background-color: #275179;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 55px;
+  color: rgb(0, 0, 0);
+}
+
+/* menu */
+.nav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 60px;
+  background-color: rgb(231, 216, 196);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  padding: 20px;
+}
+
+.nav-link,
+.logo {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.logo {
+  align-self: flex-start;
+  width: 40%;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  background-color: #000;
+}
+
+.hero img {
+  width: 50%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero-content h2,
+.hero-content p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.hero-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+  background-color: antiquewhite;
+}
+
+.hero-content a {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid rgba(20, 11, 11, 0.281);
+  color: rgb(26, 23, 23);
+  font-size: 24px;
+}
+
+main {
+  background-color: bisque;
+}
+
+/* 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      padding: 20px;
+      gap: 20px;
+    } */
+.gallery {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image {
+  flex-grow: 1;
+  flex-basis: 320px;
+  width: 100%;
+  height: 400px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.image:hover {
+  flex-grow: 4;
+}
+
+.gallery:hover .image:not(:hover) {
+  filter: blur(15px) opacity(0.5);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wide {
+  grid-column: span 2;
+  /* flex-grow: 2;
+    flex-basis: 400px; */
+}
+
+/* HeroAbout */
+.hero-content-ab img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero-content-ab h2,
+.hero-content-ab p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: end;
+}
+
+.hero-content-ab2 h2,
+.hero-content-ab2 p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.hero-content-ab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding: 40px;
+}
+
+/* hero-about */
+.hero-product-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4a46f;
+}
+
+.hero-product-about img {
+  width: 70%;
+  height: 100%;
+  margin-top: 20px;
+  object-fit: none;
+  filter: grayscale(50%) blur(15px);
+  transition: 0.5s;
+}
+
+.hero-product-about div {
+  padding: 20px;
+  margin: 30px;
+  border: 5px solid black;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.hero-content-ab h2,
+.hero-content-ab p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+}
+
+.hero-content-ab div:hover {
+  background-color: #275179;
+}
+
+.hero-product-about img:hover {
+  filter: grayscale(0) blur(0);
+}
+
+.hero-content-ab2 h2,
+.hero-content-ab2 p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* products */
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+.prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 7px 7px 0px #d4a46f;
+}
+
+.prod img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.prod div {
+  padding: 20px;
+  background-color: #eee;
+}
+
+.prod div:hover {
+  background-color: #e69d3e;
+}
+
+.hero-content-don,
+.hero-content-don p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 50px;
+  margin: 50px;
+  font-size: 25px;
+}
+
+/* donacion-box */
+.donaciones-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+.donacion-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 7px 7px 0px #275179;
+}
+
+.donacion-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.donacion-box h2,
+.donacion-box p {
+  color: rgb(7, 7, 7);
+  text-align: start;
+}
+
+.donacion-box h2 {
+  font-size: 24px;
+}
+
+.donacion-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.donacion-content a {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #275179;
+  color: #000;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-don {
+  display: flex;
+  background-color: antiquewhite;
+}
+
+.hero-don img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* hero-contact */
+.hero-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.hero-content-ct h2,
+.hero-content-ct p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+}
+
+/* Footer */
+footer p {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(231, 216, 196);
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 100px;
+  }
+  .nav {
+    height: 100%;
+  }
+  .nav-list {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .hero-product-about {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-content-ab img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
