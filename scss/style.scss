@@ -30,23 +30,6 @@ h2 {
 
 /* menu */
 
-.nav {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    height: 60px;
-    background-color: rgb(231, 216, 196);
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    width: 60%;
-    padding: 20px;
-}
-
-
 .nav-link,
 .logo {
     text-decoration: none;
@@ -85,7 +68,7 @@ h2 {
     flex-direction: column;
     gap: 15px;
     align-items: start;
-    background-color: antiquewhite;
+    background-color: $main-color;
 }
 
 .hero-content a {
@@ -99,14 +82,6 @@ h2 {
 main {
     background-color: $main-color
 }
-
-/* 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      padding: 20px;
-      gap: 20px;
-    } */
 
 .gallery {
     display: flex;
