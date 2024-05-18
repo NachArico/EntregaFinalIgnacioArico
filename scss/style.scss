@@ -7,6 +7,9 @@
 @import "components/navbar";
 @import "components/footer";
 
+//layouts
+@import "layouts/style.scss";
+
 
 h1 {
     font-family: "Ubuntu", sans-serif;
@@ -94,7 +97,7 @@ h2 {
 }
 
 main {
-    background-color: bisque;
+    background-color: $main-color
 }
 
 /* 
@@ -179,7 +182,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d4a46f;
+    background-color: $main-color;
 }
 
 .hero-product-about img {
@@ -323,7 +326,7 @@ main {
 
 .hero-don {
     display: flex;
-    background-color: antiquewhite
+    background-color: $main-color;
 }
 
 .hero-don img {
@@ -337,7 +340,7 @@ main {
 .hero-contact {
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite
+    background-color: $main-color;
 }
 
 .hero-content-ct h2,
