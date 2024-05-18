@@ -323,9 +323,9 @@ main {
 
 body {
     background-color: $main-color;
-  }
-  
-  .form-register {
+}
+
+.form-register {
     width: 400px;
     background: #24303c;
     padding: 30px;
@@ -335,14 +335,14 @@ body {
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
-  }
-  
-  .form-register h4 {
+}
+
+.form-register h4 {
     font-size: 22px;
     margin-bottom: 20px;
-  }
-  
-  .controls {
+}
+
+.controls {
     width: 100%;
     background: #24303c;
     padding: 10px;
@@ -352,26 +352,26 @@ body {
     font-family: 'calibri';
     font-size: 18px;
     color: white;
-  }
-  
-  .form-register p {
+}
+
+.form-register p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
-  }
-  
-  .form-register a {
+}
+
+.form-register a {
     color: white;
     text-decoration: none;
-  }
-  
-  .form-register a:hover {
+}
+
+.form-register a:hover {
     color: white;
     text-decoration: underline;
-  }
-  
-  .form-register .botons {
+}
+
+.form-register .botons {
     width: 100%;
     background: #1f53c5;
     border: none;
@@ -379,7 +379,7 @@ body {
     color: white;
     margin: 16px 0;
     font-size: 16px;
-  }
+}
 
 .hero-content-ct h2,
 .hero-content-ct p {
@@ -423,4 +423,24 @@ footer p {
         object-fit: cover;
 
     }
+
+    .hero-don {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content-don p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-don img {
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        object-fit: cover;
+        border: 8px solid rgba(53, 49, 49, 0.829);
+    }
+
 }
